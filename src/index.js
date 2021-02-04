@@ -55,6 +55,8 @@ export default class Recorder extends Component {
       >
         <div
           className={styles.button}
+          onTouchStart={this._onMouseDown}
+          onTouchEnd={this._onMouseUp}
           onMouseDown={this._onMouseDown}
           onMouseUp={this._onMouseUp}
         >
